@@ -21,6 +21,15 @@ type Range struct {
 	End   Position `json:"end"`
 }
 
+type WorkspaceEdit struct {
+	Changes map[string][]TextEdit `json:"changes"`
+}
+
+type TextEdit struct {
+	Range   Range  `json:"range"`
+	NewText string `json:newText"`
+}
+
 type TextDocumentPositionParams struct {
 	TextDocument TextDocumentIdentifier `json:"textDocument"`
 	Position     Position               `json:"position"`
@@ -92,5 +101,39 @@ type DefinitionParams struct {
 
 type DefinitionResponse struct {
 	Response
-	Location Location `json:"result"`
+	Result Location `json:"result"`
+}
+
+// Code actions
+
+type CodeActionRequest struct {
+	Request
+	Params TextDocumentCodeActionParams `json:"params"`
+}
+
+type TextDocumentCodeActionParams struct {
+	TextDocument TextDocumentIdentifier `json:"textDocument"`
+	Range        Range                  `json:"range"`
+	Context      CodeActionContext      `json:"context"`
+}
+
+type TextDocumentCodeActionResponse struct {
+	Response
+	Result []CodeAction `json:"result"`
+}
+
+type CodeActionContext struct {
+	// Add fiels for CodeActionContext as needed
+}
+
+type CodeAction struct {
+	Title   string         `json:"title"`
+	Edit    *WorkspaceEdit `json:"edit,omitempty"`
+	Command *Command
+}
+
+type Command struct {
+	Title     string        `json:"title"`
+	Command   string        `json:"command"`
+	Arguments []interface{} `json:"arguments,omitempty"`
 }
