@@ -1,0 +1,60 @@
+[LSP]2025/05/23 07:13:58 main.go:16: Hey, i started
+[LSP]2025/05/23 07:13:58 main.go:35: Received msg with method: initialize
+[LSP]2025/05/23 07:13:58 main.go:44: Connected to: Neovim 0.11.1+dirty
+[LSP]2025/05/23 07:13:58 main.go:35: Received msg with method: initialized
+[LSP]2025/05/23 07:13:58 main.go:35: Received msg with method: textDocument/didOpen
+[LSP]2025/05/23 07:14:01 main.go:35: Received msg with method: textDocument/hover
+[LSP]2025/05/23 07:14:01 main.go:35: Received msg with method: textDocument/didOpen
+[LSP]2025/05/[LSP]2025/05/23 07:42:27 main.go:30: Received msg with method: textDocument/didOpen
+[LSP]2025/05/23 07:42:27 main.go:53: Opened: file://, TextDocument/Text: ```go
+type DefinitionResult struct { // size=16 (0x10)
+	Contents string `json:"contents"`
+}
+```
+───────────────────────────────────────────────────────────────────────────────────
+[`lsp.DefinitionResult` on pkg.go.dev](https://pkg.go.dev/lsp/lsp#DefinitionResult)
+[LSP]2025/05/23 07:42:31 main.go:30: Received msg with method: textDocument/didClose
+[LSP]2025/05/23 07:42:38 main.go:30: Received msg with method: textDocument/didOpen
+[LSP]2025/05/23 07:42:38 main.go:53: Opened: file://, TextDocument/Text: ```go
+type int int
+```
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+int is a signed integer type that is at least 32 bits in size. It is a distinct type, however, and not an alias for, say, int32.
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+[`int` on pkg.go.dev](https://pkg.go.dev/builtin#int)
+[LSP]2025/05/23 07:42:43 main.go:30: Received msg with method: textDocument/didClose
+Changed: file:///home/smkm/personal/lsp/README.md
+[LSP]2025/05/23 07:20:03 main.go:35: Received msg with method: textDocument/didChange
+[LSP]2025/05/23 07:20:03 main.go:64: Changed: file:///home/smkm/personal/lsp/README.md
+[LSP]2025/05/23 07:20:03 main.go:35: Received msg with method: textDocument/didChange
+[LSP]2025/05/23 07:20:03 main.go:64: Changed: file:///home/smkm/personal/lsp/README.md
+[LSP]2025/05/23 07:20:03 main.go:35: Received msg with method: textDocument/didChange
+[LSP]2025/05/23 07:20:03 main.go:64: Changed: file:///home/smkm/personal/lsp/README.md
+[LSP]2025/05/23 07:20:03 main.go:35: Received msg with method: textDocument/didChange
+[LSP]2025/05/23 07:20:03 main.go:64: Changed: file:///home/smkm/personal/lsp/README.md
+[LSP]2025/05/23 07:20:06 main.go:35: Received msg with method: textDocument/didChange
+[LSP]2025/05/23 07:20:06 main.go:64: Changed: file:///home/smkm/personal/lsp/README.md
+[LSP]2025/05/23 07:20:06 main.go:35: Received msg with method: textDocument/didChange
+[LSP]2025/05/23 07:20:06 main.go:64: Changed: file:///home/smkm/personal/lsp/README.md
+[LSP]2025/05/23 07:20:06 main.go:35: Received msg with method: textDocument/didChange
+[LSP]2025/05/23 07:20:06 main.go:64: Changed: file:///home/smkm/personal/lsp/README.md
+[LSP]2025/05/23 07:20:06 main.go:35: Received msg with method: textDocument/didChange
+[LSP]2025/05/23 07:20:06 main.go:64: Changed: file:///home/smkm/personal/lsp/README.md
+[LSP]2025/05/23 07:20:16 main.go:35: Received msg with method: textDocument/hover
+[LSP]2025/05/23 07:20:16 main.go:35: Received msg with method: textDocument/didOpen
+[LSP]2025/05/23 07:20:17 main.go:35: Received msg with method: textDocument/hover
+[LSP]2025/05/23 07:20:17 main.go:35: Received msg with method: textDocument/hover
+[LSP]2025/05/23 07:20:17 main.go:35: Received msg with method: textDocument/didClose
+[LSP]2025/05/23 07:20:18 main.go:35: Received msg with method: textDocument/hover
+[LSP]2025/05/23 07:20:18 main.go:35: Received msg with method: textDocument/didOpen
+[LSP]2025/05/23 07:20:19 main.go:35: Received msg with method: textDocument/didClose
+[LSP]2025/05/23 07:20:21 main.go:35: Received msg with method: textDocument/hover
+[LSP]2025/05/23 07:20:21 main.go:35: Received msg with method: textDocument/didOpen
+[LSP]2025/05/23 07:20:22 main.go:35: Received msg with method: textDocument/didClose
+[LSP]2025/05/23 07:20:23 main.go:35: Received msg with method: textDocument/hover
+[LSP]2025/05/23 07:20:23 main.go:35: Received msg with method: textDocument/didOpen
+[LSP]2025/05/23 07:20:23 main.go:35: Received msg with method: textDocument/didClose
+[LSP]2025/05/23 07:20:24 main.go:35: Received msg with method: textDocument/hover
+[LSP]2025/05/23 07:20:24 main.go:35: Received msg with method: textDocument/didOpen
+[LSP]2025/05/23 07:48:11 main.go:35: Received msg with method: textDocument/didClose
+[LSP]2025/05/23 07:48:17 main.go:35: Received msg with method: shutdown

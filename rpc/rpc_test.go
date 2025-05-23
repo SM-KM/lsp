@@ -16,15 +16,20 @@ func TestEncode(t *testing.T) {
 	}
 }
 
-func TestDecore(t *testing.T) {
-	incomingMessage := "Content-Length: 16\r\n\r\n{\"Testing\":true}"
-	contentLen, err := DecodeMessage([]byte(incomingMessage))
+func TestDecode(t *testing.T) {
+	incomingMessage := "Content-Length: 15\r\n\r\n{\"Method\":\"hi\"}"
+	method, content, err := DecodeMessage([]byte(incomingMessage))
+	contentLen := len(content)
 
 	if err != nil {
 		t.Fatal(err)
 	}
 
-	if contentLen != 16 {
-		t.Fatalf("Expected: 16, Got: %d", contentLen)
+	if contentLen != 15 {
+		t.Fatalf("Expected: 15, Got: %d", contentLen)
+	}
+
+	if method != "hi" {
+		t.Fatalf("Expected: hi, Got: %s", method)
 	}
 }
