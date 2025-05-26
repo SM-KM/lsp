@@ -1,4 +1,10 @@
-[LSP]2025/05/23 09:29:56 main.go:16: Hey, i started
-[LSP]2025/05/23 09:29:56 main.go:35: Received msg with method: initialize
-[LSP]2025/05/23 09:29:56 main.go:44: Connected to: Neovim 0.11.1+dirty
-[LSP]2025/05/23 09:29:56 main.go:35: Received msg with method: initialized
+[LSP]2025/05/26 09:30:24 main.go:16: Hey, i started
+[LSP]2025/05/26 09:30:24 main.go:35: Received msg with method: initialize
+[LSP]2025/05/26 09:30:24 main.go:44: Connected to: Neovim 0.11.1+dirty
+[LSP]2025/05/26 09:30:24 main.go:35: Received msg with method: initialized
+[LSP]2025/05/26 09:30:24 main.go:35: Received msg with method: textDocument/didOpen
+[LSP]2025/05/26 09:30:26 main.go:35: Received msg with method: textDocument/didChange
+[LSP]2025/05/26 09:30:26 main.go:75: Changed: file:///home/smkm/personal/lsp/README.md
+[LSP]2025/05/26 09:30:26 main.go:35: Received msg with method: textDocument/completion
+[LSP]2025/05/26 09:30:27 main.go:35: Received msg with method: textDocument/didSave
+[LSP]2025/05/26 09:30:38 main.go:35: Received msg with method: shutdown

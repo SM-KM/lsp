@@ -137,3 +137,43 @@ type Command struct {
 	Command   string        `json:"command"`
 	Arguments []interface{} `json:"arguments,omitempty"`
 }
+
+// Completion
+type CompletionRequest struct {
+	Request
+	Params HoverParams `json:"params"`
+}
+
+type CompletionParams struct {
+	TextDocumentPositionParams
+}
+
+type CompletionResponse struct {
+	Response
+	Result []CompletionItem `json:"result"`
+}
+
+type CompletionItem struct {
+	Label         string `json:"label"`
+	Detail        string `json:"detail"`
+	Documentation string `json:"documentation"`
+}
+
+// Diagnostics
+
+type PublishDiagnosticNotification struct {
+	Notification
+	Params PublishDiagnosticParams `json:"params"`
+}
+
+type PublishDiagnosticParams struct {
+	URI         string       `json:"uri"`
+	Diagnostics []Diagnostic `json:"diagnostics"`
+}
+
+type Diagnostic struct {
+	Range    Range  `json:"range"`
+	Severity int    `json:"severity"`
+	Source   string `json:"source"`
+	Message  string `json:"message"`
+}
